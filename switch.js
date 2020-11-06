@@ -1,4 +1,4 @@
-// Opdracht 1: schrijf een functie calculate die de parameters a, b en operator verwacht. a en b zijn altijd cijfers.
+ // Opdracht 1: schrijf een functie calculate die de parameters a, b en operator verwacht. a en b zijn altijd cijfers.
 // Als de operator 'add' wordt meegegeven, telt de functie a en b bij elkaar op en geeft dat terug
 // Als de operator 'subtract' wordt meegegeven, trekt de functie a en b van elkaar af en geeft dat terug
 // Als de operator 'multiply' wordt meegegeven, vermenigvuldigd de functie a en b met elkaar en geeft dat terug
@@ -8,6 +8,21 @@
 // calculate(5, 7, 'subtract') geeft -2
 // calculate(25, 5, 'divide') geeft 5
 
+ function calculate(a,b,operator){
+    switch (operator){
+        case "add":
+            return a+b;
+        case "substract":
+            return a-b;
+        case "multiply":
+            return a*b;
+        case "divide":
+            return a/b;
+        default:
+            return "no operator";
+    }
+ }
+console.log(calculate(3,4,"multiply"));
 
 
 
